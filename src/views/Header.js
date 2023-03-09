@@ -1,6 +1,18 @@
 import React from "react";
+import "./Header.css";
 
 const Header = () => {
+  window.onscroll = function () {
+    const header = document.querySelector(".navbar");
+    var top = window.scrollY;
+    console.log(top);
+    if (top >= 100) {
+      header.classList.add("navbarDark");
+    } else {
+      header.classList.remove("navbarDark");
+    }
+  };
+
   return (
     <nav class="navbar navbar-expand-lg fixed-top navbarScroll">
       <div class="container">
