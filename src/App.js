@@ -4,6 +4,7 @@ import "./App.css";
 import About from "./views/About";
 import Header from "./views/Header";
 import Main from "./views/Main";
+import Services from "./views/Services";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Header />
       <Main />
       <About />
+      <Services />
     </div>
   );
 }
