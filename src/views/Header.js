@@ -17,7 +17,7 @@ const Header = () => {
     <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light navbarScroll">
       <div class="container-fluid">
         <p class="navbar-brand" href="#">
-          Brad
+          Christian Arruzza
         </p>
         <button
           class="navbar-toggler"
@@ -44,7 +44,7 @@ const Header = () => {
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#services">
-                Services
+                Technogies
               </a>
             </li>
             <li class="nav-item">
