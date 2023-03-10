@@ -4,9 +4,9 @@ const Contact = () => {
   return (
     <section id="contact">
       <div class="container mt-3 contactContent">
-        <h1 class="text-center">Contact Me</h1>
+        <h1 class="display-4 text-center">Contact Me</h1>
 
-        <div class="row mt-4">
+        <div class="row justify-content-md-center">
           <div class="col-lg-6">
             <form>
               <input

@@ -2,11 +2,18 @@ import React from "react";
 import image from "../images/about.jpeg";
 import style from "./About.module.css";
 
+const DESCRIPTION =
+  "I'm Christian Arruzza and I'm a Front End Developer since 2013. \n \
+  I really love my job and I try to learn every day something new. \n \
+  I started with plain HTML, Javascript and CSS, then I move \
+  forward learning Vue js, Angular and React. \n \
+  I'm curios, passionate, precise in my work and I love working in team.";
+
 const About = () => {
   return (
     <section id="about" className={style.about}>
       <div class="container mt-4 pt-4">
-        <h1 class="text-center" style={{ marginBottom: "4rem" }}>
+        <h1 class="display-4 text-center" style={{ marginBottom: "4rem" }}>
           Nice to meet you. Something about me.
         </h1>
         <div class="row mt-4">
@@ -14,16 +21,9 @@ const About = () => {
             <img src={image} className={style["imageAboutPage"]} alt="" />
           </div>
 
-          <div class="col-lg-8">
-            <div class="row mt-3">
-              <p>
-                {" "}
-                I'm Christian Arruzza and I'm a Front End Developer since 2013.
-                I really love my job and I try to learn every day something new.
-                I started with plain HTML, Javascript and CSS, then I move
-                forward learning Vue js, Angular and React. I'm curios,
-                passionate, precise in my work and I love working in team.
-              </p>
+          <div class="col-lg-6">
+            <div class="about-me-content row mt-3">
+              <p class="lead"> {DESCRIPTION}</p>
             </div>
             {/* <div class="row mt-3">
               <div class="col-md-6">

@@ -10,7 +10,7 @@ const Portfolio = () => {
   return (
     <section id="portfolio">
       <div class="container mt-3">
-        <h1 class="text-center">Portfolio</h1>
+        <h1 class="display-4 text-center">Portfolio</h1>
         <div class="row">
           <div class="col-lg-4 mt-4">
             <div class="card">
