@@ -4,6 +4,7 @@
   background: url("../images/heroImage.jpeg");
   background-size: cover;
   position: relative;
+  margin-top: 0px;
 }
 /* text css above hero image*/
 .hero_title {

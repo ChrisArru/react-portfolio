@@ -14,8 +14,8 @@ const Header = () => {
   };
 
   return (
-    <nav class="navbar navbar-expand-lg fixed-top navbarScroll">
-      <div class="container">
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light navbarScroll">
+      <div class="container-fluid">
         <p class="navbar-brand" href="#">
           Brad
         </p>
