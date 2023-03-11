@@ -1,7 +1,7 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap";
-import style from "./Portfolio.module.css";
+import style from "./Work.module.css";
 import {
   faAngleDoubleRight,
   faArrowRight,
@@ -9,9 +9,9 @@ import {
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-const Portfolio = () => {
+const Work = () => {
   return (
-    <section id="portfolio">
+    <section id="work">
       <div class="container">
         <h1 class="display-4 text-center" style={{ marginBottom: "4rem" }}>
           Where I've worked
@@ -84,22 +84,22 @@ const Portfolio = () => {
                     <FontAwesomeIcon icon={faAngleDoubleRight} listItem />
                     <p class="lead">
                       Write modern, performant, maintainable code for a diverse
-                      array of client and internal projects
+                      array of clients from the banking sector.
                     </p>
                   </li>
                   <li>
                     <FontAwesomeIcon icon={faAngleDoubleRight} listItem />
                     <p class="lead">
                       Work with a variety of different languages, platforms,
-                      frameworks, and content management systems such as
-                      JavaScript, TypeScript, React, Docker, Java
+                      frameworks such as JavaScript, TypeScript, React, Docker,
+                      Java Spring.
                     </p>
                   </li>
                   <li>
                     <FontAwesomeIcon icon={faAngleDoubleRight} listItem />
                     <p class="lead">
                       Communicate with engineers, designers and analysts on a
-                      daily basis
+                      daily basis.
                     </p>
                   </li>
                 </ul>
@@ -130,9 +130,8 @@ const Portfolio = () => {
                     <FontAwesomeIcon icon={faAngleDoubleRight} listItem />
                     <p class="lead">
                       Work with a variety of different languages, platforms,
-                      frameworks, and content management systems such as
-                      JavaScript, TypeScript, Angular, Docker, Java Spring,
-                      Jenkins.
+                      frameworks such as JavaScript, TypeScript, Angular,
+                      Docker, Java Spring, Jenkins.
                     </p>
                   </li>
                   <li>
@@ -141,7 +140,7 @@ const Portfolio = () => {
                       Agile Scrum methodology adopted with a multi-cultural
                       teams of engineers (from India and USA) with daily
                       stand-up meeting, retrospective meeting and Sprint Review
-                      every 3-4 weeks.
+                      with customers and stakeholders every 3-4 weeks.
                     </p>
                   </li>
                 </ul>
@@ -193,4 +192,4 @@ const Portfolio = () => {
   );
 };
 
-export default Portfolio;
+export default Work;

@@ -3,11 +3,11 @@ import image from "../images/about.jpeg";
 import style from "./About.module.css";
 
 const DESCRIPTION =
-  "I'm Christian Arruzza and I'm a Front End Developer since 2013. \n \
-  I really love my job and I try to learn every day something new. \n \
-  I started with plain HTML, Javascript and CSS, then I move \
-  forward learning Vue js, Angular and React. \n \
-  I'm curios, passionate, precise in my work and I love working in team.";
+  "I'm Christian Arruzza and I'm a Front End Developer based in Turin, Italy. \n \
+  Since 2013 where I started my adventure in the IT world, I really loved (and love still today!) my job and I try my best to learn every day something new. \n\n \
+  From HTML, Javascript and CSS, to the newest technologies such as Vue js, Angular and React. I never stop to study and learn. \n\n \
+  I'm curios, passionate, precise in my work and I love working in team. \n\n \
+  I'm always looking forward my next adventure so don't hesitate to contact me if you are interested in having a small talk with me.";
 
 const About = () => {
   return (
@@ -22,7 +22,7 @@ const About = () => {
           </div>
 
           <div class="col-lg-6">
-            <div class="about-me-content row mt-3">
+            <div className={`${style["about-me-content"]} row mt-3`}>
               <p class="lead"> {DESCRIPTION}</p>
             </div>
             {/* <div class="row mt-3">

@@ -1,5 +1,5 @@
 import React from "react";
-import "./Services.css";
+import "./Technologies.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faVuejs,
@@ -11,16 +11,14 @@ import {
   faJs,
   faNodeJs,
   faGit,
-  faDocker,
-  faJenkins,
 } from "@fortawesome/free-brands-svg-icons";
 
-const Services = () => {
+const Technologies = () => {
   return (
-    <section id="services">
+    <section id="technologies">
       <div class="container">
         <h1 class="display-4 text-center" style={{ marginBottom: "4rem" }}>
-          Languages I speak
+          Do we speak the same language?
         </h1>
         <div class="row">
           <div class="col-lg-4 mt-4">
@@ -67,4 +65,4 @@ const Services = () => {
   );
 };
 
-export default Services;
+export default Technologies;

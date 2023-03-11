@@ -9,6 +9,6 @@
 .about-me-content {
   white-space: pre-line;
   height: 100%;
-  position: relative;
-  top: 28%;
+  /* position: relative;
+  top: 28%; */
 }

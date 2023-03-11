@@ -7,8 +7,8 @@ import Contact from "./views/Contact";
 import Footer from "./views/Footer";
 import Header from "./views/Header";
 import Main from "./views/Main";
-import Portfolio from "./views/Portfolio";
-import Services from "./views/Services";
+import Work from "./views/Work";
+import Technologies from "./views/Technologies";
 
 function App() {
   return (
@@ -16,8 +16,8 @@ function App() {
       <Header />
       <Main />
       <About />
-      <Services />
-      <Portfolio />
+      <Technologies />
+      <Work />
       <Contact />
       <Footer />
     </div>
