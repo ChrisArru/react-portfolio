@@ -16,7 +16,7 @@ const Work = () => {
         <h1 class="display-4 text-center" style={{ marginBottom: "4rem" }}>
           Where I've worked
         </h1>
-        <div style={{ height: "50vh" }} class="row justify-content-md-center">
+        <div class="row justify-content-md-center">
           <div
             style={{ justifyContent: "center" }}
             class="d-flex align-items-start"
