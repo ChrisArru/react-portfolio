@@ -65,7 +65,11 @@ const Work = () => {
                 Comau - Robotics Area
               </button>
             </div>
-            <div class="tab-content" id="v-pills-tabContent">
+            <div
+              style={{ width: "100%" }}
+              class="tab-content"
+              id="v-pills-tabContent"
+            >
               <div
                 class="tab-pane fade show active"
                 id="v-pills-home"
