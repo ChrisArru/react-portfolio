@@ -4,8 +4,8 @@ import style from "./About.module.css";
 
 const DESCRIPTION =
   "I'm Christian Arruzza and I'm a Front End Developer based in Turin, Italy. \n \
-  Since 2013 where I started my adventure in the IT world, I really loved (and love still today!) my job and I try my best to learn every day something new. \n\n \
-  From HTML, Javascript and CSS, to the newest technologies such as Vue js, Angular and React. I never stop to study and learn. \n\n \
+  Since 2013 when I started my adventure in the IT world, I really loved (and love still today!) my job and I try my best to learn every day something new. \n\n \
+  From HTML, Javascript and CSS, to the newest technologies such as Vue js, Angular and React. I never stop studying and learning. \n\n \
   I'm curios, passionate, precise in my work and I love working in team. \n\n \
   I'm always looking forward my next adventure so don't hesitate to contact me if you are interested in having a small talk with me.";
 
