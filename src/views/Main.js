@@ -18,10 +18,14 @@ const Main = () => {
             </div>
           </div> */}
           <div class="jumbotron">
-            <h1 class="display-4">Hello, world! I'm Christian.</h1>
-            <p class="lead">Front End Developer based in Turin, Italy.</p>
+            <h1 className={`${style["hero-title"]} display-4`}>
+              Hello, world! I'm Christian.
+            </h1>
+            <p className={`${style["hero-desc"]} lead`}>
+              Front End Developer based in Turin, Italy.
+            </p>
             <hr class="my-4" />
-            <p>
+            <p className={style["little-img"]}>
               <img src={image} style={{ width: "60%" }} alt="" />
             </p>
           </div>
