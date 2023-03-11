@@ -1,153 +1,189 @@
 import React from "react";
-import portfolioImage1 from "../images/portfolioImage1.jpg";
-import portfolioImage2 from "../images/portfolioImage2.jpg";
-import portfolioImage3 from "../images/portfolioImage3.jpg";
-import portfolioImage4 from "../images/portfolioImage4.jpg";
-import portfolioImage5 from "../images/portfolioImage4.jpg";
-import portfolioImage6 from "../images/portfolioImage4.jpg";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap";
+import style from "./Portfolio.module.css";
+import {
+  faAngleDoubleRight,
+  faArrowRight,
+} from "@fortawesome/free-solid-svg-icons";
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Portfolio = () => {
   return (
     <section id="portfolio">
-      <div class="container mt-3">
-        <h1 class="display-4 text-center">Portfolio</h1>
-        <div class="row">
-          <div class="col-lg-4 mt-4">
-            <div class="card">
-              <img
-                class="card-img-top"
-                src={portfolioImage1}
-                alt="Card1"
-                style={{ width: "100%" }}
-              />
-              <div class="card-body">
-                <h4 class="card-title">YouTube Clone</h4>
-                <p class="card-text">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry.
-                </p>
-                <div class="text-center">
-                  {/* <a href="#" class="btn btn-success">
-                    Link
-                  </a> */}
-                </div>
-              </div>
-            </div>
-          </div>
+      <div class="container">
+        <h1 class="display-4 text-center" style={{ marginBottom: "4rem" }}>
+          Where I've worked
+        </h1>
+        <div style={{ height: "50vh" }} class="row justify-content-md-center">
+          <div
+            style={{ justifyContent: "center" }}
+            class="d-flex align-items-start"
+          >
+            <div
+              class="nav flex-column nav-pills me-3"
+              id="v-pills-tab"
+              role="tablist"
+              aria-orientation="vertical"
+            >
+              <button
+                class="nav-link active"
+                id="v-pills-home-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#v-pills-home"
+                type="button"
+                role="tab"
+                aria-controls="v-pills-home"
+                aria-selected="true"
+              >
+                ATS - Advanced Technology Solutions
+              </button>
+              <button
+                class="nav-link"
+                id="v-pills-profile-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#v-pills-profile"
+                type="button"
+                role="tab"
+                aria-controls="v-pills-profile"
+                aria-selected="false"
+              >
+                Comau - Digital Area
+              </button>
 
-          <div class="col-lg-4 mt-4">
-            <div class="card portfolioContent">
-              <img
-                class="card-img-top"
-                src={portfolioImage2}
-                alt="Card2"
-                style={{ width: "100%" }}
-              />
-              <div class="card-body">
-                <h4 class="card-title">Quiz App</h4>
-                <p class="card-text">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry.
-                </p>
-                <div class="text-center">
-                  {/* <a href="#" class="btn btn-success">
-                    Link
-                  </a> */}
-                </div>
-              </div>
+              <button
+                class="nav-link"
+                id="v-pills-settings-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#v-pills-settings"
+                type="button"
+                role="tab"
+                aria-controls="v-pills-settings"
+                aria-selected="false"
+              >
+                Comau - Robotics Area
+              </button>
             </div>
-          </div>
-
-          <div class="col-lg-4 mt-4">
-            <div class="card portfolioContent">
-              <img
-                class="card-img-top"
-                src={portfolioImage3}
-                alt="Card3"
-                style={{ width: "100%" }}
-              />
-              <div class="card-body">
-                <h4 class="card-title">Product Landing Page</h4>
-                <p class="card-text">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry.
+            <div class="tab-content" id="v-pills-tabContent">
+              <div
+                class="tab-pane fade show active"
+                id="v-pills-home"
+                role="tabpanel"
+                aria-labelledby="v-pills-home-tab"
+                tabindex="0"
+              >
+                <p class="lead">
+                  Front End Developer{" "}
+                  <cite className={style.company} title="Source Title">
+                    @ATS
+                  </cite>
                 </p>
-                <div class="text-center">
-                  {/* <a href="#" class="btn btn-success">
-                    Link
-                  </a> */}
-                </div>
+                <ul className="fa-ul">
+                  <li>
+                    <FontAwesomeIcon icon={faAngleDoubleRight} listItem />
+                    <p class="lead">
+                      Write modern, performant, maintainable code for a diverse
+                      array of client and internal projects
+                    </p>
+                  </li>
+                  <li>
+                    <FontAwesomeIcon icon={faAngleDoubleRight} listItem />
+                    <p class="lead">
+                      Work with a variety of different languages, platforms,
+                      frameworks, and content management systems such as
+                      JavaScript, TypeScript, React, Docker, Java
+                    </p>
+                  </li>
+                  <li>
+                    <FontAwesomeIcon icon={faAngleDoubleRight} listItem />
+                    <p class="lead">
+                      Communicate with engineers, designers and analysts on a
+                      daily basis
+                    </p>
+                  </li>
+                </ul>
               </div>
-            </div>
-          </div>
-        </div>
-        <br />
-        <div class="row">
-          <div class="col-lg-4 mt-4">
-            <div class="card portfolioContent">
-              <img
-                class="card-img-top"
-                src={portfolioImage4}
-                alt="Card4"
-                style={{ width: "100%" }}
-              />
-              <div class="card-body">
-                <h4 class="card-title">Messaging Service</h4>
-                <p class="card-text">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry.
+              <div
+                class="tab-pane fade"
+                id="v-pills-profile"
+                role="tabpanel"
+                aria-labelledby="v-pills-profile-tab"
+                tabindex="0"
+              >
+                <p class="lead">
+                  Front End Developer{" "}
+                  <cite className={style.company} title="Source Title">
+                    @Comau Digital Area
+                  </cite>
                 </p>
-                <div class="text-center">
-                  {/* <a href="#" class="btn btn-success">
-                    Link
-                  </a> */}
-                </div>
+                <ul className="fa-ul">
+                  <li>
+                    <FontAwesomeIcon icon={faAngleDoubleRight} listItem />
+                    <p class="lead">
+                      Responsable of mantaining and develop new features of a
+                      internal product: a MES SPA Web Page for the automotive
+                      sector.
+                    </p>
+                  </li>
+                  <li>
+                    <FontAwesomeIcon icon={faAngleDoubleRight} listItem />
+                    <p class="lead">
+                      Work with a variety of different languages, platforms,
+                      frameworks, and content management systems such as
+                      JavaScript, TypeScript, Angular, Docker, Java Spring,
+                      Jenkins.
+                    </p>
+                  </li>
+                  <li>
+                    <FontAwesomeIcon icon={faAngleDoubleRight} listItem />
+                    <p class="lead">
+                      Agile Scrum methodology adopted with a multi-cultural
+                      teams of engineers (from India and USA) with daily
+                      stand-up meeting, retrospective meeting and Sprint Review
+                      every 3-4 weeks.
+                    </p>
+                  </li>
+                </ul>
               </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 mt-4">
-            <div class="card portfolioContent">
-              <img
-                class="card-img-top"
-                src={portfolioImage5}
-                alt="Card5"
-                style={{ width: "100%" }}
-              />
-              <div class="card-body">
-                <h4 class="card-title">Twitter Clone</h4>
-                <p class="card-text">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry.
+              <div
+                class="tab-pane fade"
+                id="v-pills-settings"
+                role="tabpanel"
+                aria-labelledby="v-pills-settings-tab"
+                tabindex="0"
+              >
+                <p class="lead">
+                  Front End Developer and Application Specialist{" "}
+                  <cite className={style.company} title="Source Title">
+                    @Comau Robotics Engineering
+                  </cite>
                 </p>
-                <div class="text-center">
-                  {/* <a href="#" class="btn btn-success">
-                    Link
-                  </a> */}
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 mt-4">
-            <div class="card portfolioContent">
-              <img
-                class="card-img-top"
-                src={portfolioImage6}
-                alt="Card6"
-                style={{ width: "100%" }}
-              />
-              <div class="card-body">
-                <h4 class="card-title">Blog App</h4>
-                <p class="card-text">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry.
-                </p>
-                <div class="text-center">
-                  {/* <a href="#" class="btn btn-success">
-                    Link
-                  </a> */}
-                </div>
+                <ul className="fa-ul">
+                  <li>
+                    <FontAwesomeIcon icon={faAngleDoubleRight} listItem />
+                    <p class="lead">
+                      Write code UI and business logic for different customers
+                      in the automotive sectors and for various R&D internal
+                      projects
+                    </p>
+                  </li>
+                  <li>
+                    <FontAwesomeIcon icon={faAngleDoubleRight} listItem />
+                    <p class="lead">
+                      Technical Expert of two automotive applications: from the
+                      design to the delivering of the software
+                    </p>
+                  </li>
+                  <li>
+                    <FontAwesomeIcon icon={faAngleDoubleRight} listItem />
+                    <p class="lead">
+                      Communicate with multi-disciplinary and multi-cultural
+                      teams of engineers, designers, producers, suppliers and
+                      clients on a daily basis
+                    </p>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
