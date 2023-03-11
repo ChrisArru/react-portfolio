@@ -13,16 +13,32 @@ const Footer = () => {
     <footer id="footer">
       <div class="container-fluid">
         <div class="social-icons mt-4">
-          <a href="https://www.facebook.com/" target="_blank" rel="noreferrer">
+          <a
+            href="https://www.facebook.com/christian.arruzza/"
+            target="_blank"
+            rel="noreferrer"
+          >
             <FontAwesomeIcon icon={faFacebook} />
           </a>
-          <a href="https://www.instagram.com/" target="_blank" rel="noreferrer">
+          <a
+            href="https://www.instagram.com/chrisarru/"
+            target="_blank"
+            rel="noreferrer"
+          >
             <FontAwesomeIcon icon={faInstagram} />
           </a>
-          <a href="https://www.github.com/" target="_blank" rel="noreferrer">
+          <a
+            href="https://github.com/ChrisArru"
+            target="_blank"
+            rel="noreferrer"
+          >
             <FontAwesomeIcon icon={faGithubAlt} />
           </a>
-          <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">
+          <a
+            href="https://www.linkedin.com/in/christian-arruzza-23b240161/"
+            target="_blank"
+            rel="noreferrer"
+          >
             <FontAwesomeIcon icon={faLinkedin} />
           </a>
         </div>
