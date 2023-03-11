@@ -19,7 +19,9 @@ const Services = () => {
   return (
     <section id="services">
       <div class="container">
-        <h1 class="display-4 text-center">Technologies</h1>
+        <h1 class="display-4 text-center" style={{ marginBottom: "4rem" }}>
+          Languages I speak
+        </h1>
         <div class="row">
           <div class="col-lg-4 mt-4">
             <FontAwesomeIcon icon={faReact} style={{ height: "100px" }} />
