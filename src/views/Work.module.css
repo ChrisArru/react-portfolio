@@ -2,3 +2,14 @@
   font-size: 0.875em;
   color: #6c757d;
 }
+
+@media screen and (max-width: 600px) {
+  .work-container {
+    flex-direction: column;
+    align-self: center;
+  }
+
+  .work-titles {
+    margin-bottom: 2rem;
+  }
+}

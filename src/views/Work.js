@@ -16,10 +16,10 @@ const Work = () => {
         <div class="row justify-content-md-center">
           <div
             style={{ justifyContent: "center" }}
-            class="d-flex align-items-start"
+            className={`${style["work-container"]} d-flex align-items-start`}
           >
             <div
-              class="nav flex-column nav-pills me-3"
+              className={`${style["work-titles"]} nav flex-column nav-pills me-3`}
               id="v-pills-tab"
               role="tablist"
               aria-orientation="vertical"
