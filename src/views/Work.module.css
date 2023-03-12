@@ -3,10 +3,16 @@
   color: #6c757d;
 }
 
+.work-container {
+  height: 50vh;
+}
+
 @media screen and (max-width: 600px) {
   .work-container {
     flex-direction: column;
     align-self: center;
+    align-items: stretch !important;
+    height: auto;
   }
 
   .work-titles {
