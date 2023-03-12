@@ -11,8 +11,8 @@ const DESCRIPTION =
 
 const About = () => {
   return (
-    <section id="about" className={style.about}>
-      <div class="container mt-4 pt-4">
+    <section id="about" className={`${style.about}`}>
+      <div className={`reveal container mt-4 pt-4`}>
         <h1 class="display-4 text-center" style={{ marginBottom: "4rem" }}>
           Nice to meet you. Something about me.
         </h1>

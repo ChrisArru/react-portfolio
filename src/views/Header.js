@@ -5,7 +5,6 @@ const Header = () => {
   window.onscroll = function () {
     const header = document.querySelector(".navbar");
     var top = window.scrollY;
-    console.log(top);
     if (top >= 100) {
       header.classList.add("navbarDark");
     } else {

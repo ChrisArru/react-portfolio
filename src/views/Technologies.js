@@ -16,7 +16,7 @@ import {
 const Technologies = () => {
   return (
     <section id="technologies">
-      <div class="container">
+      <div class="container reveal">
         <h1 class="display-4 text-center" style={{ marginBottom: "4rem" }}>
           Do we speak the same language?
         </h1>

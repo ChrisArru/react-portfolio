@@ -9,7 +9,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const Work = () => {
   return (
     <section id="work">
-      <div class="container">
+      <div class="container reveal">
         <h1 class="display-4 text-center" style={{ marginBottom: "4rem" }}>
           Where I've worked
         </h1>

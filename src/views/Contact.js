@@ -3,7 +3,7 @@ import React from "react";
 const Contact = () => {
   return (
     <section id="contact">
-      <div class="container mt-3 contactContent">
+      <div class="container mt-3 contactContent reveal">
         <h1 class="display-4 text-center" style={{ marginBottom: "4rem" }}>
           Contact Me
         </h1>
