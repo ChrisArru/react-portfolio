@@ -12,8 +12,16 @@ import Technologies from "./views/Technologies";
 
 function App() {
   window.onscroll = function () {
-    var reveals = document.querySelectorAll(".reveal");
+    const header = document.querySelector(".navbar");
+    var top = window.scrollY;
+    if (top >= 100) {
+      header.classList.add("navbarDark");
+    } else {
+      header.classList.remove("navbarDark");
+    }
 
+    var reveals = document.querySelectorAll(".reveal");
+    console.log(reveals);
     for (var i = 0; i < reveals.length; i++) {
       var windowHeight = window.innerHeight;
       var elementTop = reveals[i].getBoundingClientRect().top;
