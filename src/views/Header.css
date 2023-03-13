@@ -9,3 +9,15 @@
   margin: 0px;
   padding: 0px;
 }
+
+.switch-change-theme {
+  position: relative;
+  left: 57%;
+}
+
+@media screen and (max-width: 600px) {
+  .switch-change-theme {
+    position: relative;
+    left: 10%;
+  }
+}

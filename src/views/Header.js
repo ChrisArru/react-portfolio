@@ -1,17 +1,20 @@
 import React from "react";
 import "./Header.css";
-import { faToggleOff, faToggleOn } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-const Header = () => {
+const Header = ({ changeTheme }) => {
   return (
     <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark navbarScroll">
       <div class="container-fluid">
         <p class="navbar-brand" href="#">
           Christian Arruzza
         </p>
-        <div class="form-switch text-center">
-          <input type="checkbox" id="mode" class="form-check-input" />
+        <div class="form-switch text-center switch-change-theme">
+          <input
+            type="checkbox"
+            onChange={changeTheme}
+            id="mode"
+            class="form-check-input"
+          />
           <label for="mode" class="form-check-label"></label>
         </div>
         <button

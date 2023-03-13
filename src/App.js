@@ -9,7 +9,6 @@ import Header from "./views/Header";
 import Main from "./views/Main";
 import Work from "./views/Work";
 import Technologies from "./views/Technologies";
-import { signal } from "@preact/signals-react";
 import { useState } from "react";
 
 /* export const theme = signal("dark"); */
@@ -41,7 +40,7 @@ function App() {
 
   const [theme, setTheme] = useState("dark");
 
-  const changeThemeHandler = () => {
+  const onChangeThemeHandler = () => {
     /* if (theme.value === "dark") {
       theme.value = "light";
     } else {
@@ -52,15 +51,15 @@ function App() {
 
   return (
     <div className="App text-body bg-body" data-bs-theme={theme}>
-      <Header />
-      <button
+      <Header changeTheme={onChangeThemeHandler} />
+      {/* <button
         onClick={changeThemeHandler}
         type="button"
         class="btn btn-primary"
         style={{ position: "relative", top: "100px" }}
       >
         Cambia tema
-      </button>
+      </button> */}
 
       <Main />
       <About />
