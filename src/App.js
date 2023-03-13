@@ -1,5 +1,5 @@
 import "bootstrap/dist/css/bootstrap.min.css";
-import "bootstrap";
+//import "bootstrap";
 
 import "./App.css";
 import About from "./views/About";
@@ -9,6 +9,10 @@ import Header from "./views/Header";
 import Main from "./views/Main";
 import Work from "./views/Work";
 import Technologies from "./views/Technologies";
+import { signal } from "@preact/signals-react";
+import { useState } from "react";
+
+/* export const theme = signal("dark"); */
 
 function App() {
   window.onscroll = function () {
@@ -21,7 +25,7 @@ function App() {
     }
 
     var reveals = document.querySelectorAll(".reveal");
-    console.log(reveals);
+
     for (var i = 0; i < reveals.length; i++) {
       var windowHeight = window.innerHeight;
       var elementTop = reveals[i].getBoundingClientRect().top;
@@ -35,9 +39,29 @@ function App() {
     }
   };
 
+  const [theme, setTheme] = useState("dark");
+
+  const changeThemeHandler = () => {
+    /* if (theme.value === "dark") {
+      theme.value = "light";
+    } else {
+      theme.value = "dark";
+    } */
+    setTheme((prev) => (prev === "dark" ? "light" : "dark"));
+  };
+
   return (
-    <div className="App">
+    <div className="App text-body bg-body" data-bs-theme={theme}>
       <Header />
+      <button
+        onClick={changeThemeHandler}
+        type="button"
+        class="btn btn-primary"
+        style={{ position: "relative", top: "100px" }}
+      >
+        Cambia tema
+      </button>
+
       <Main />
       <About />
       <Technologies />

@@ -21,8 +21,8 @@ const About = () => {
             <img src={image} className={style["imageAboutPage"]} alt="" />
           </div>
 
-          <div class="col-lg-6">
-            <div className={`${style["about-me-content"]} row mt-3`}>
+          <div class="col-lg-8">
+            <div className={`${style["about-me-content"]} row mt-3 text-body`}>
               <p class="lead"> {DESCRIPTION}</p>
             </div>
             {/* <div class="row mt-3">

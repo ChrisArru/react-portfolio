@@ -4,3 +4,8 @@
 .navbarScroll.navbarDark {
   background-color: black;
 }
+
+.navbar-brand {
+  margin: 0px;
+  padding: 0px;
+}
