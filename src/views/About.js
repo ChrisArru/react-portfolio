@@ -1,5 +1,5 @@
 import React from "react";
-import image from "../images/about.jpeg";
+import image from "../images/about.jpg";
 import style from "./About.module.css";
 
 const DESCRIPTION =

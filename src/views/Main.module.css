@@ -12,10 +12,12 @@
 @media screen and (max-width: 600px) {
   .hero-jumbotron {
     height: 100vh;
-    background: url("../images/heroImage.jpeg");
+    background: url("../images/heroImageMobile.jpg");
     background-size: cover;
     position: relative;
     padding-top: 8rem;
+    background-position-x: right;
+    margin-bottom: 4rem;
   }
 
   .little-img {

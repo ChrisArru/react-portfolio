@@ -3,9 +3,9 @@
   color: #6c757d;
 }
 
-.work-container {
+/* .work-container {
   height: 50vh;
-}
+} */
 
 @media screen and (max-width: 600px) {
   .work-container {
